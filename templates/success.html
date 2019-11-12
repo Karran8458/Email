@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+<p>The email address you entered( {{ email_on_template }} )</p>
+<p>is a VALID email address! Thank you!</p>
+<h1>Email Addresses Entered:</h1>
+{% for one_email in all_email %}
+                <p>Email: {{ one_email["email"] }} </p>
+        <hr>
+        {% endfor %}
+
+</body>
+</html>
